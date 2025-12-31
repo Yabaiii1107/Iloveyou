@@ -140,6 +140,43 @@
         gap: 0.5rem;
       }
     }
+  
+    /* ===== Memories Gallery ===== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .memory-card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .memory-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+    }
+
+    .memory-card img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .memory-caption {
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #f5f5f5;
+      background: rgba(0,0,0,0.25);
+    }
+
   </style>
 </head>
 <body>
@@ -186,16 +223,33 @@
     </div>
   </section>
 
-  <!-- ===== Memories Section ===== -->
+    <!-- ===== Memories Section ===== -->
   <section id="memories">
     <div class="container">
       <div class="card">
         <h2>Memories Together</h2>
         <p>
-          From simple late-night talks to unforgettable adventures, every memory
-          with you is a treasure. This year reminded me that love isn’t about
-          perfection — it’s about choosing each other every day.
+          Every photo holds a moment, every moment holds a feeling. These are the
+          memories that make my heart smile whenever I think of us.
         </p>
+
+        <div class="gallery">
+          <!-- Copy this block to add more photos -->
+          <div class="memory-card">
+            <img src="memory1.jpg" alt="Memory 1">
+            <div class="memory-caption">Our first photo together 💕</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="memory2.jpg" alt="Memory 2">
+            <div class="memory-caption">A day I'll never forget ✨</div>
+          </div>
+
+          <div class="memory-card">
+            <img src="memory3.jpg" alt="Memory 3">
+            <div class="memory-caption">Smiles that mean everything ❤️</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
