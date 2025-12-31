@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy New Year, My Love</title>
+
+  <!-- =====================
+       EMBEDDED CSS (Editable)
+       ===================== -->
+  <style>
+    /* ===== Editable Theme Colors ===== */
+    :root {
+      --bg-color: #0f2027;          /* Background color */
+      --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --primary-color: #ffd700;     /* Accent / highlight */
+      --text-color: #ffffff;       /* Main text color */
+      --card-bg: rgba(255, 255, 255, 0.08);
+    }
+
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* ===== Card Style ===== */
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    /* ===== Mobile Responsive ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">✨ Our New Year ✨</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#message">New Year Message</a>
+        <a href="memories">Memories Together</a>
+        <a href="#songs">Favorite Songs</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero / Home ===== -->
+  <section id="home" class="hero">
+    <h1>Happy New Year, My Love ❤️</h1>
+    <p>
+      Another year has passed, and another beautiful year begins with you.
+      This page is made just for you — a small reminder of how much you mean to me.
+    </p>
+  </section>
+
+  <!-- ===== Message Section ===== -->
+  <section id="message">
+    <div class="container">
+      <div class="card">
+        <h2>My New Year Message</h2>
+        <p>
+          As the fireworks light up the sky, I just want you to know that you are
+          the brightest part of my life. Thank you for every laugh, every memory,
+          and every moment we shared this past year. I’m excited to face another
+          year with you — hand in hand, heart to heart.
+        </p>
+        <br />
+        <p>
+          May this New Year bring us more love, growth, and unforgettable moments.
+          I love you, always.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Favorite Songs Section ==
+  <section id="songs">
+    <div class="container">
+      <div class="card">
+        <h2>Favorite Songs</h2>
+        <p>
+          These are the songs that remind me of you, of us, and of the love we
+          continue to build together. Each melody feels like home.
+        </p>
+        <ul>
+          <li>🎵 <a href="https://open.spotify.com" target="_blank">Song Title 1</a></li>
+          <li>🎵 <a href="https://open.spotify.com" target="_blank">Song Title 2</a></li>
+          <li>🎵 <a href="https://open.spotify.com" target="_blank">Song Title 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>Made with ❤️ for you | New Year Theme</p>
+  </footer>
+
+</body>
+</html>
