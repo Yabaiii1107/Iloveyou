@@ -142,40 +142,53 @@
     }
   
     /* ===== Memories Gallery ===== */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
+/* ===== Memories Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
-    .memory-card {
-      background: var(--card-bg);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.memory-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
 
-    .memory-card:hover {
-      transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.45);
-    }
+.memory-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
 
-    .memory-card img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-    }
+/* 🔥 FIXED IMAGE SIZE */
+.memory-card img {
+  width: 100%;
+  height: 280px;              /* uniform height */
+  object-fit: cover;          /* crop nicely */
+  object-position: center;    /* center faces */
+  display: block;
+}
 
-    .memory-caption {
-      padding: 0.8rem 1rem;
-      font-size: 0.9rem;
-      text-align: center;
-      color: #f5f5f5;
-      background: rgba(0,0,0,0.25);
-    }
+.memory-caption {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #f5f5f5;
+  background: rgba(0,0,0,0.25);
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 600px) {
+  .memory-card img {
+    height: 220px;
+  }
+}
+
 
   </style>
 </head>
@@ -281,6 +294,7 @@
 
 </body>
 </html>
+
 
 
 
